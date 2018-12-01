@@ -2,15 +2,17 @@
 Group 3: Pablo Villagomez, Alexis Milon, Sriya Sahasranam
 
 
-###Build a web application of your choosing with a team.
+### Build a web application of your choosing with a team.
 
-1. Come up with a proposal for an application and send it to me for approval
+Come up with a proposal for an application and send it to me for approval
+
+
 **Calendar Application**
 
 
-Must have two features per team member (3 if that team member is a grad student)
-Must be completable by the deadline
-Must be functionality beyond simple CRUD operations
+* Must have two features per team member (3 if that team member is a grad student)
+* Must be completable by the deadline
+* Must be functionality beyond simple CRUD operations
 
 
 1. Start working
@@ -22,7 +24,7 @@ Must be functionality beyond simple CRUD operations
 * The video presentation must be uploaded to Youtube and the link must accompany your code deliverable.
 
 
-1. Submit your application + presentation + team assessment before the deadline. 12/4 @ 6:25PM
+**Submit your application + presentation + team assessment before the deadline. 12/4 @ 6:25PM**
 
 
 *You will be graded on the following categories.*
