@@ -31,7 +31,6 @@ ul li {
     width: 14.28%;
     border: 1px solid #CC0052;
     background-color: white;
-     overflow: scroll;
 }
 
 .calendar.monthView div.prevNextMonth {
@@ -51,14 +50,12 @@ ul li {
 	border-right: 1px solid #F5EAEB;
 	border-bottom: 1px solid #F5EAEB;
 	background-color: #FDF5FA;
-   
 }
 
 .calendar.monthView > div ul {
 	display : inline-block;
 	margin-left: 5px;
 	width: calc(100% - 45px);
-     
 }
 
 .calendar.monthView > div ul li {

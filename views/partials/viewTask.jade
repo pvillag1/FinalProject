@@ -3,7 +3,7 @@ html
   body
     p
       a.btn.btn-info(ng-href='/') Go back to List
-    p Event for Date {{task.dateStart}}
+    p Raw Data: {{task}}
     form#viewTask(name='viewTask', ng-submit='todoSave(viewTask)', novalidate='novalidate')
       .form-group
         label(for='title') Title
@@ -19,6 +19,5 @@ html
         label(for='location') Location
         |     
         input#location.form-control(type='text', ng-model='task.location')
-
       |   
       input.btn.btn-success.center-block(type='submit', value='Save')
