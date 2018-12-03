@@ -19,12 +19,17 @@ router.get('/all', function(req, res) {
  */
 router.get('/date/:date', function(req, res) {
     var db = req.db;
-	var dStart = req.params.date;
+	var dStart = new Date(req.params.date);
 	var dEnd = new Date(req.params.date)
 	dEnd = dEnd.setHours(24,59,59,999);
     console.log("jkhh");
 	 console.log(req.params.date);
-
+     
+dStart = dStart.toISOString();
+    console.log(dStart);
+    
+	dStart = new Date(dStart).toISOString().slice(0, 10);
+    console.log(dStart);
     /* Get list for today by querying tasks that: 
         start after today's start AND start before today's end
         OR
@@ -32,7 +37,11 @@ router.get('/date/:date', function(req, res) {
         OR
         start before today's start and end after today's end
     */
-	db.collection('taskCollection').find({dateStart: { $gt: req.params.date}}).toArray( function (err, items) {
+    
+      db.collection('taskCollection').find().toArray( function (err, items) {
+            console.log(items);
+    });
+	db.collection('taskCollection').find({dateStart: dStart}).toArray( function (err, items) {
         console.log(items);
         res.json(items);
     });
