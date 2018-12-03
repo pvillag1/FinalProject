@@ -7,17 +7,17 @@ html
     form#viewTask(name='viewTask', ng-submit='todoSave(viewTask)', novalidate='novalidate')
       .form-group
         label(for='title') Title
-        |     
+        |
         input#title.form-control(type='text', ng-model='task.title', ng-required='true')
-      |   
+      |
       .form-group
         label(for='description') Description
-        |     
+        |
         textarea#description.form-control(ng-model='task.description')
-      |   
+      |
       .form-group
         label(for='location') Location
-        |     
+        |
         input#location.form-control(type='text', ng-model='task.location')
-      |   
+      |
       input.btn.btn-success.center-block(type='submit', value='Save')
