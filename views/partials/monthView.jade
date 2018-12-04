@@ -1,6 +1,6 @@
 h2
 	span.label.label-info {{months[currentMonth-1]}} {{currentYear}}
-	
+
 nav
 	ul.pager
 		li
@@ -13,12 +13,12 @@ nav
 					{{months[(currentMonth)%12]}} &rarr;
 
 div.dayName MONDAY
-div.dayName TEUSDAY 
-div.dayName WEDNESDAY 
-div.dayName THURSDAY 
-div.dayName FRIDAY 
-div.dayName SATURDAY 
-div.dayName SUNDAY  
+div.dayName TUESDAY 
+div.dayName WEDNESDAY
+div.dayName THURSDAY
+div.dayName FRIDAY
+div.dayName SATURDAY
+div.dayName SUNDAY
 div.calendar.monthView
 	div(ng-repeat='i in getNumber(firstDay-1) track by $index').prevNextMonth
 	div(ng-repeat='i in getNumber(totalDays) track by $index', title='Click to add new event').currentMonth
